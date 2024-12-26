@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Decision Tree</title>
+  <style>
+    /* General Styling */
+    
+  </style>
+  <link rel='stylesheet' href='./style.css'>
+</head>
+<body>
+  <div class="container">
+    <h1>Interactive Decision Tree</h1>
+    <form id="decision-tree">
+      <div class="question">
+        <label for="preference">Do you prefer the mountains or the beach?</label>
+        <select id="preference" required>
+          <option value="" disabled selected>Select one</option>
+          <option value="Mountains">Mountains</option>
+          <option value="Beach">Beach</option>
+        </select>
+      </div>
+      <div class="question">
+        <label for="activity">Are you looking for adventure or relaxation?</label>
+        <select id="activity" required>
+          <option value="" disabled selected>Select one</option>
+          <option value="Adventure">Adventure</option>
+          <option value="Relaxation">Relaxation</option>
+        </select>
+      </div>
+      <div class="question">
+        <label for="budget">What’s your budget?</label>
+        <select id="budget" required>
+          <option value="" disabled selected>Select one</option>
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+      </div>
+      <button type="button" id="generate">Get Recommendation</button>
+    </form>
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
